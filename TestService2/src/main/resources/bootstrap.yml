@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: TestService2
+  cloud:
+    consul:
+      config:
+        enabled: false
+      discovery:
+        instanceId: ${spring.application.name}
+      host: localhost
+      port: 8500
