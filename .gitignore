@@ -1,0 +1,7 @@
+
+*.jar
+.mvn/wrapper/maven-wrapper.properties
+mvnw
+*.cmd
+*.original
+/target/
