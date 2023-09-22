@@ -1,2 +1,7 @@
 
 .idea
+*.jar
+gateway/.mvn/wrapper/maven-wrapper.properties
+gateway/mvnw
+gateway/mvnw.cmds
+gateway/mvnw.cmd
