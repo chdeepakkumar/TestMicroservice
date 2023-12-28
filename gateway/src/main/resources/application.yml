@@ -1,15 +1,19 @@
 server:
-  port: 8082
+  port: 8080
 
 spring:
   cloud:
     gateway:
       routes:
         - id: TestService1
-          uri: http://localhost:8080
-          predicates:
-            - Path=/test11
-        - id: TestService2
           uri: http://localhost:8081
           predicates:
-            - Path=/test21
+            - Path=/test11/**
+        - id: TestService2
+          uri: http://localhost:8082
+          predicates:
+            - Path=/test21/**
+        - id: TestService3
+          uri: http://localhost:8083
+          predicates:
+            - Path=/test31/**

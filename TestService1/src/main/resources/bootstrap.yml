@@ -10,13 +10,3 @@ spring:
         instanceId: ${spring.application.name}
       host: localhost
       port: 8500
-    gateway:
-      routes:
-        - id: TestService1
-          uri: localhost:8080
-          predicates:
-            - Path=/test11/**
-        - id: TestService2
-          uri: localhost:8081
-          predicates:
-            - Path=/test21/**

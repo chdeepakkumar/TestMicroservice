@@ -1,0 +1,4 @@
+FROM openjdk:17
+MAINTAINER DeepakKumarCh
+COPY target/testservice1-0.0.1-SNAPSHOT.jar testservice1.jar
+ENTRYPOINT ["java","-jar","/testservice1.jar"]
